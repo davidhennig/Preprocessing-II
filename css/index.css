@@ -1,6 +1,5 @@
 .buttons {
-  background-color: #1f928c;
-  /* Green */
+  background-color: #17a2b8;
   color: white;
   width: 80%;
   padding: 15px 32px;
@@ -8,15 +7,24 @@
   font-size: 16px;
   border-radius: 15px;
 }
+@media (max-width: 500px) {
+  .buttons {
+    width: 100%;
+  }
+}
 .btn {
-  background-color: #1f928c;
-  /* Green */
+  background-color: #17a2b8;
   color: white;
   width: 80%;
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -194,10 +202,21 @@ header {
   align-items: center;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
 nav {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 nav a {
   text-decoration: none;
@@ -207,7 +226,7 @@ nav a {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -220,6 +239,11 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    margin: 0px 10px;
+  }
 }
 .home .content-section .CTA {
   border-top: 2px dashed grey;
@@ -236,16 +260,33 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -259,16 +300,37 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 95%;
+    padding: 40px 0px;
+    border-bottom: 2px dashed grey;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    border: 1px solid black;
+    display: inline;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
 }

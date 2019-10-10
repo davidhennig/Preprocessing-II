@@ -1,12 +1,15 @@
 // Mixins in here
 .buttons {
-  background-color: #1f928c; /* Green */
+  background-color: @eastern-blue;
   color: white;
   width: 80%;
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   border-radius: 15px;
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 .btn {
